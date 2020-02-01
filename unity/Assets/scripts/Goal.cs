@@ -46,6 +46,14 @@ public class Goal : MonoBehaviour
         var player = collision.gameObject.GetComponent<Movement>();
         if (player != null) return;
 
+        var thing = collision.gameObject.GetComponent<Thing>();
+        if (thing == null) return;
+
+        if(this.TrackIndex != thing.TrackIndex)
+        {
+            return;
+        }
+
         foreach(var m in Meshes)
         {
             if (m.enabled)
@@ -53,7 +61,7 @@ public class Goal : MonoBehaviour
                 return;
             }
         }
-        Debug.Log(string.Format("Goal collided with {0}", collision.gameObject.name));
+        Debug.Log(string.Format("Goal {1} collided with {0}", collision.gameObject.name, this.gameObject.name));
 
         GameObject.Destroy(collision.gameObject);
 
