@@ -5,10 +5,11 @@ using UnityEditor;
 
 public class GrabAndThrow : MonoBehaviour
 {
-    // carrying information
+    // throw information
     public GameObject ThingPosition;
     private Collider2D currentItem;
     public float Impulse = 10;
+    public float VelocityScale = 0.01f;
 
     // grab information
     public GameObject HandPosition;
@@ -17,6 +18,16 @@ public class GrabAndThrow : MonoBehaviour
 
     private LayerMask PickupLayerMask;
 
+    private Movement movement;
+    private Rigidbody2D body;
+
+    private float VelocityX
+    {
+        get
+        {
+            return body.velocity.x;
+        }
+    }
 
     private void PickupItem()
     {
@@ -46,8 +57,9 @@ public class GrabAndThrow : MonoBehaviour
         currentItem.enabled = true;
         var go = currentItem.gameObject;
         var p = go.GetComponent<Rigidbody2D>();
+        p.velocity = Vector2.zero;
         p.simulated = true;
-        p.AddForce(new Vector2(0, this.Impulse), ForceMode2D.Impulse);
+        p.AddForce(new Vector2(this.VelocityX * this.VelocityScale, this.Impulse), ForceMode2D.Impulse);
         this.currentItem = null;
     }
 
@@ -55,6 +67,8 @@ public class GrabAndThrow : MonoBehaviour
     void Start()
     {
         this.PickupLayerMask = LayerMask.GetMask(this.PickupLayerMaskName);
+        this.movement = GetComponent<Movement>();
+        this.body = GetComponent<Rigidbody2D>();
     }
 
     void Update()
