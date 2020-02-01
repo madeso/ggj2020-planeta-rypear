@@ -10,7 +10,9 @@ public class Movement : MonoBehaviour
 
     public float MovementSmoothing = .05f;
 
-    public Vector3 Velocity = Vector3.zero;
+    public float JumpImpulse = 5;
+
+    private Vector3 Velocity = Vector3.zero;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,11 @@ public class Movement : MonoBehaviour
         Vector3 targetVelocity = new Vector2(dx * Speed, rb.velocity.y);
         // And then smoothing it out and applying it to the character
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref Velocity, MovementSmoothing);
+
+        if(Input.GetButtonDown("Jump"))
+        {
+            rb.AddForce(Vector2.up * JumpImpulse, ForceMode2D.Impulse);
+        }
 
     }
 }

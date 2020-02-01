@@ -9,7 +9,7 @@ public class GrabAndThrow : MonoBehaviour
     public GameObject ThingPosition;
     private Collider2D currentItem;
     public float Impulse = 10;
-    public float VelocityScale = 0.01f;
+    public float VelocityScale = 1.0f;
 
     // grab information
     public GameObject HandPosition;
@@ -73,7 +73,7 @@ public class GrabAndThrow : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Fire1"))
         {
             if(this.currentItem == null)
             {
