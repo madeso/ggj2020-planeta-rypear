@@ -1,0 +1,13 @@
+
+GreenCircle.png
+size: 287,366
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Green Circle
+  rotate: false
+  xy: 2, 2
+  size: 283, 362
+  orig: 283, 362
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,13 @@
+
+yellow2.png
+size: 113,117
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Yellow2
+  rotate: false
+  xy: 2, 2
+  size: 109, 113
+  orig: 109, 113
+  offset: 0, 0
+  index: -1

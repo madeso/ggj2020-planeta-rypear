@@ -1,0 +1,13 @@
+
+BRsticks.png
+size: 402,428
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BR Sticks
+  rotate: false
+  xy: 2, 2
+  size: 398, 424
+  orig: 398, 424
+  offset: 0, 0
+  index: -1

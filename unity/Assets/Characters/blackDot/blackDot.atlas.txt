@@ -1,0 +1,13 @@
+
+blackDot.png
+size: 212,259
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Black Dot
+  rotate: false
+  xy: 2, 2
+  size: 208, 255
+  orig: 208, 255
+  offset: 0, 0
+  index: -1

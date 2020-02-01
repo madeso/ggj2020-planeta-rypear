@@ -1,0 +1,13 @@
+
+swoosh.png
+size: 1169,861
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Swoosh_2
+  rotate: false
+  xy: 2, 2
+  size: 1165, 857
+  orig: 1165, 857
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,13 @@
+
+3sticks.png
+size: 338,347
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+3 Sticks
+  rotate: false
+  xy: 2, 2
+  size: 334, 343
+  orig: 334, 343
+  offset: 0, 0
+  index: -1
