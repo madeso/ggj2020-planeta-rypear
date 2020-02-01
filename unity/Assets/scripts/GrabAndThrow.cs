@@ -7,6 +7,8 @@ public class GrabAndThrow : MonoBehaviour
 {
     // carrying information
     public GameObject ThingPosition;
+    private Collider2D currentItem;
+    public float Impulse = 10;
 
     // grab information
     public GameObject HandPosition;
@@ -20,16 +22,33 @@ public class GrabAndThrow : MonoBehaviour
     {
         if (this.HandPosition != null && this.HandRadius > 0)
         {
-            var collided = Physics2D.OverlapCircle(this.HandPosition.transform.position, this.HandRadius, this.PickupLayerMask);
-            if (collided != null)
+            currentItem = Physics2D.OverlapCircle(this.HandPosition.transform.position, this.HandRadius, this.PickupLayerMask);
+            if (currentItem != null)
             {
-                Debug.Log(string.Format("pickup thingy: {0}", collided.name));
+                Debug.Log(string.Format("pickup thingy: {0}", currentItem.name));
             }
             else
             {
                 Debug.Log("nothing");
             }
+
+            if(currentItem != null)
+            {
+                currentItem.enabled = false;
+                var p = currentItem.gameObject.GetComponent<Rigidbody2D>();
+                p.simulated = false;
+            }
         }
+    }
+
+    private void ThrowItem()
+    {
+        currentItem.enabled = true;
+        var go = currentItem.gameObject;
+        var p = go.GetComponent<Rigidbody2D>();
+        p.simulated = true;
+        p.AddForce(new Vector2(0, this.Impulse), ForceMode2D.Impulse);
+        this.currentItem = null;
     }
 
 
@@ -42,7 +61,14 @@ public class GrabAndThrow : MonoBehaviour
     {
         if(Input.GetButtonDown("Jump"))
         {
-            PickupItem();
+            if(this.currentItem == null)
+            {
+                PickupItem();
+            }
+            else
+            {
+                ThrowItem();
+            }
         }
         // todo: throw item if carrying
     }
@@ -58,5 +84,10 @@ public class GrabAndThrow : MonoBehaviour
     void FixedUpdate()
     {
         // todo: move item if carrying
+        if(this.currentItem != null)
+        {
+            var go = this.currentItem.gameObject;
+            go.transform.position = this.ThingPosition.transform.position;
+        }
     }
 }

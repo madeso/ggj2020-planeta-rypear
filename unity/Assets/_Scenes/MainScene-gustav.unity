@@ -929,7 +929,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1256663652}
   m_Layer: 8
-  m_Name: HandPosition
+  m_Name: GrabPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1040,7 +1040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2139697790}
   m_Layer: 8
-  m_Name: PickupPosition
+  m_Name: ItemHoldPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1054,7 +1054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139697789}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 4.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 723514553}
