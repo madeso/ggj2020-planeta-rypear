@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 22269725}
   - component: {fileID: 22269724}
   - component: {fileID: 22269723}
+  - component: {fileID: 22269726}
   m_Layer: 9
   m_Name: Cello/Other strings
   m_TagString: Untagged
@@ -555,6 +556,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &22269726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22269721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97e4e08f625ca4492925879c6e74f37a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TrackIndex: 4
 --- !u!1 &35449657
 GameObject:
   m_ObjectHideFlags: 0
@@ -2872,6 +2886,7 @@ GameObject:
   - component: {fileID: 1056085873}
   - component: {fileID: 1056085875}
   - component: {fileID: 1056085874}
+  - component: {fileID: 1056085876}
   m_Layer: 9
   m_Name: Banjo/Harp up/down
   m_TagString: Untagged
@@ -3253,6 +3268,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1056085876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056085871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97e4e08f625ca4492925879c6e74f37a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TrackIndex: 3
 --- !u!1 &1085148999
 GameObject:
   m_ObjectHideFlags: 0
@@ -4182,6 +4210,7 @@ GameObject:
   - component: {fileID: 1617261593}
   - component: {fileID: 1617261595}
   - component: {fileID: 1617261594}
+  - component: {fileID: 1617261596}
   m_Layer: 9
   m_Name: DrumsItem
   m_TagString: Untagged
@@ -4290,6 +4319,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.8
+--- !u!114 &1617261596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617261591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97e4e08f625ca4492925879c6e74f37a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TrackIndex: 1
 --- !u!1 &1637424508
 GameObject:
   m_ObjectHideFlags: 0
@@ -4676,7 +4718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf76211ccc2c34422ae2808ce69b5225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackIndex: 3
+  TrackIndex: 2
   Partners: []
 --- !u!60 &1873332768
 PolygonCollider2D:
@@ -4703,11 +4745,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.00000047683716, y: 4.56}
-      - {x: -4.336818, y: 1.4091173}
-      - {x: -2.680301, y: -3.6891177}
-      - {x: 2.6803007, y: -3.6891172}
-      - {x: 4.336817, y: 1.409118}
+    - - {x: -1.6360116, y: 1.2680271}
+      - {x: -0.96448296, y: -1.2674347}
+      - {x: 2.1615658, y: 0.6245041}
+      - {x: 1.5037249, y: 3.6037664}
 --- !u!1 &1877791093
 GameObject:
   m_ObjectHideFlags: 0
@@ -5713,6 +5754,7 @@ GameObject:
   - component: {fileID: 2139047923}
   - component: {fileID: 2139047925}
   - component: {fileID: 2139047924}
+  - component: {fileID: 2139047926}
   m_Layer: 9
   m_Name: Bass/?
   m_TagString: Untagged
@@ -5821,6 +5863,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2139047926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139047921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97e4e08f625ca4492925879c6e74f37a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TrackIndex: 2
 --- !u!1 &2139697789
 GameObject:
   m_ObjectHideFlags: 0

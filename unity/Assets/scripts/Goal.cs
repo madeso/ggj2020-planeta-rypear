@@ -39,6 +39,16 @@ public class Goal : MonoBehaviour
         {
             Debug.Log(string.Format("Goal {0} was unable to find song", this.gameObject.name));
         }
+
+        bool has_meshes = false;
+        foreach(var m in this.Meshes)
+        {
+            has_meshes = true;
+        }
+        if(has_meshes == false)
+        {
+            Debug.Log(string.Format("No meshes for {0}", this.gameObject.name));
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -58,7 +68,7 @@ public class Goal : MonoBehaviour
         {
             if (m.enabled)
             {
-                return;
+                // return;
             }
         }
         Debug.Log(string.Format("Goal {1} collided with {0}", collision.gameObject.name, this.gameObject.name));

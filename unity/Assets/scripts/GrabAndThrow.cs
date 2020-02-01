@@ -36,11 +36,11 @@ public class GrabAndThrow : MonoBehaviour
             currentItem = Physics2D.OverlapCircle(this.HandPosition.transform.position, this.HandRadius, this.PickupLayerMask);
             if (currentItem != null)
             {
-                Debug.Log(string.Format("pickup thingy: {0}", currentItem.name));
+                // Debug.Log(string.Format("pickup thingy: {0}", currentItem.name));
             }
             else
             {
-                Debug.Log("nothing");
+                // Debug.Log("nothing");
             }
 
             if(currentItem != null)
@@ -84,7 +84,6 @@ public class GrabAndThrow : MonoBehaviour
                 ThrowItem();
             }
         }
-        // todo: throw item if carrying
     }
 
     private void OnDrawGizmos()
