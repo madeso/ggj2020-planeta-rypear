@@ -6,9 +6,9 @@ public class Movement : MonoBehaviour
 {
     private Rigidbody2D rb;
 
-    public float Speed { get; set; } = 10;
+    public float Speed = 10;
 
-    public float MovementSmoothing { get; set; } = .05f;
+    public float MovementSmoothing = .05f;
 
     private Vector3 m_Velocity = Vector3.zero;
 
