@@ -527,7 +527,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217547356}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.89, y: 1.91, z: 0}
+  m_LocalPosition: {x: -4.3, y: 1.91, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1211,6 +1211,8 @@ GameObject:
   - component: {fileID: 957871652}
   - component: {fileID: 957871651}
   - component: {fileID: 957871650}
+  - component: {fileID: 957871654}
+  - component: {fileID: 957871655}
   m_Layer: 10
   m_Name: Spine Mecanim GameObject (PinkCircle)
   m_TagString: Untagged
@@ -1335,6 +1337,49 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957871648}
   m_Mesh: {fileID: 0}
+--- !u!114 &957871654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957871648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf76211ccc2c34422ae2808ce69b5225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TrackIndex: 0
+--- !u!60 &957871655
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957871648}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.000046253204, y: 2.7763722}
+      - {x: -2.633289, y: 0.86320937}
+      - {x: -1.6274796, y: -2.2323532}
+      - {x: 1.6273875, y: -2.232353}
+      - {x: 2.6331964, y: 0.8632098}
 --- !u!1 &1085148999
 GameObject:
   m_ObjectHideFlags: 0
@@ -2886,7 +2931,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128139096}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.41, y: 1.91, z: 0}
+  m_LocalPosition: {x: 4.32, y: 1.91, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
