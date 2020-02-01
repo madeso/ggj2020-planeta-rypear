@@ -43,6 +43,9 @@ public class Goal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        var player = collision.gameObject.GetComponent<Movement>();
+        if (player != null) return;
+
         foreach(var m in Meshes)
         {
             if (m.enabled)
