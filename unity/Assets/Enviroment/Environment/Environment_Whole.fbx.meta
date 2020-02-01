@@ -3,7 +3,22 @@ guid: 8dcfe1449b16a4f01b94c1de2eda78af
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Off_Limits_Poles_2
+    second: {fileID: 2100000, guid: 1c8fc5f9c3a0646968e25fd644a361b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Off_Limits_poles
+    second: {fileID: 2100000, guid: 090dc48fb934c4384b3087631f9af4e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall_and_floor
+    second: {fileID: 2100000, guid: 579137da9f30146c3b96850acd9bb9fd, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -80,7 +95,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 1000
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
