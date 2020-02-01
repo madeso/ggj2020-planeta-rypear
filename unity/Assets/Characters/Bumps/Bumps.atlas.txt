@@ -1,0 +1,13 @@
+
+Bumps.png
+size: 1001,890
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bumps
+  rotate: false
+  xy: 2, 2
+  size: 997, 886
+  orig: 997, 886
+  offset: 0, 0
+  index: -1

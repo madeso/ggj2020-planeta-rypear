@@ -1,0 +1,13 @@
+
+PinkCircle.png
+size: 434,559
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Pink Circle
+  rotate: false
+  xy: 2, 2
+  size: 430, 555
+  orig: 430, 558
+  offset: 0, 2
+  index: -1

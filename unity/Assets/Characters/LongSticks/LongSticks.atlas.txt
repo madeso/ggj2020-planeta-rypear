@@ -1,0 +1,13 @@
+
+LongSticks.png
+size: 551,545
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Long Sticks
+  rotate: false
+  xy: 2, 2
+  size: 547, 541
+  orig: 547, 541
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,13 @@
+
+GreenSquarepants.png
+size: 670,916
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Green Squarepants
+  rotate: false
+  xy: 2, 2
+  size: 666, 912
+  orig: 666, 912
+  offset: 0, 0
+  index: -1
