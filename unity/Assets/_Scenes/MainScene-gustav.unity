@@ -2160,32 +2160,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &723514555
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 723514550}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: e12f80ecd3cb14eb58bc24bb4a2cdb86, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.4, y: 4.8}
-    newSize: {x: 6.4, y: 4.8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 6.4, y: 4.8}
-  m_EdgeRadius: 0
 --- !u!1 &728703728
 GameObject:
   m_ObjectHideFlags: 0
@@ -6317,6 +6291,18 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: e12f80ecd3cb14eb58bc24bb4a2cdb86, type: 2}
+    - target: {fileID: 723514555, guid: 2354894607d474d809ce2827702c5f3d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 723514555, guid: 2354894607d474d809ce2827702c5f3d, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.631708
+      objectReference: {fileID: 0}
+    - target: {fileID: 723514555, guid: 2354894607d474d809ce2827702c5f3d, type: 3}
+      propertyPath: m_Size.x
+      value: 4.6771584
+      objectReference: {fileID: 0}
     - target: {fileID: 723514556, guid: 2354894607d474d809ce2827702c5f3d, type: 3}
       propertyPath: ThingPosition
       value: 
@@ -6538,7 +6524,7 @@ PrefabInstance:
     - target: {fileID: 2783956478409583408, guid: 48638ff89e67a4f06ad6de29793fc1d6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.68
+      value: -2.59
       objectReference: {fileID: 0}
     - target: {fileID: 2783956478836189140, guid: 48638ff89e67a4f06ad6de29793fc1d6,
         type: 3}
